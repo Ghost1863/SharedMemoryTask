@@ -19,6 +19,18 @@
    ```bash
    git clone <ваш-репозиторий>
    cd <ваш-репозиторий>
+Скомпилируйте программы:
+
+   ```bash
+   gcc -o write_shared src/write_shared.c
+   gcc -o read_shared src/read_shared.c
+   ```
+Запустите программы:
+
+   ```bash
+   ./write_shared | ./read_shared
+   ```
+Программа write_shared создаст разделяемую память, запишет в неё строку "Hello world!" и передаст ключ разделяемой памяти программе read_shared, которая прочитает и выведет данные.
 
 ### 2. Запуск скрипта
 
@@ -38,7 +50,7 @@
 Запустите контейнер:
 
    ```bash
-   docker run --rm shared-memory-app
+   docker run -it --rm shared-memory-app
    ```
 Используйте  скрипт:
 
