@@ -40,3 +40,8 @@
    ```bash
    docker run --rm shared-memory-app
    ```
+Используйте  скрипт:
+
+   ```bash
+      ./scripts/run.sh
+   ```
