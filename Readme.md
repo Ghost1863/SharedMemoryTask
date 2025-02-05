@@ -37,7 +37,7 @@
 
 Вы можете использовать скрипт run.sh для автоматической сборки и запуска программ:
    ```bash
-      ./scripts/run.sh
+   ./scripts/run.sh
    ```
 Скрипт скомпилирует программы, запустит их и удалит бинарные файлы после завершения.
 
@@ -48,13 +48,9 @@
    ```bash
    docker build -t shared-memory-app .
    ```
-Запустите контейнер:
+Запустите контейнер, скрипт run.sh запустится автоматически:
 
    ```bash
-   docker run -it --rm shared-memory-app
+   docker run --rm shared-memory-app
    ```
-Используйте  скрипт:
 
-   ```bash
-   ./scripts/run.sh
-   ```
